@@ -1,1 +1,1 @@
-echo 'from git'
+echo 'Is it from git?'
