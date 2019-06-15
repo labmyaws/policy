@@ -4,7 +4,7 @@ pipeline {
 stages {
 		stage ('Check Health of Conjur server') {
 			steps {
-				sh 'echo 'Is it from git? 333 ?''
+				echo 'Is it from git? 444 ?'
 			}
 		}
         }
