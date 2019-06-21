@@ -10,7 +10,7 @@ pipeline {
 
               '''
           } finally {
-            junit 'nosetests.xml'
+            junit 'noseests.xml'
           }
         }
       }
