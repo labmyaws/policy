@@ -14,15 +14,11 @@ pipeline {
   stages {
     stage("Run unit tests"){
       steps {
-  //      script {
- //       try {
+
           sh  '''
-ls -la
+			curl -k --data $conjurAPI "https://master1.yoba.net/authn/Kramerica/dba01/authenticate"| base64 | tr -d '\r\n'
               '''
-    //      } finally {
-    //       junit 'noseests.xml'
-    //   }
-       // }
+  
       }
     }
 
