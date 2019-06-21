@@ -8,7 +8,7 @@ pipeline {
     def conjurPOLICY_BRANCH = 'root'
     def conjurPOLICY_FILE = 'policy_file.yml'
     def conjurUSER = 'dba01'
-    def payload = readFile '${conjurPOLICY_FILE}'
+    //def payload = readFile '${conjurPOLICY_FILE}'
 }
 
   stages {
