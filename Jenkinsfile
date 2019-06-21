@@ -1,4 +1,6 @@
 pipeline {
+
+  agent any
     def conjurURL = 'https://conjur-master.nate.lab/'
     def conjurAPI = '1jhmekq2zeqgpc1rsafc6dhv4db1s14zbq2g9dnc71f0kg7d3wabtek'
     def conjurORG = 'cybr'
@@ -7,7 +9,7 @@ pipeline {
     def conjurUSER = 'admin'
     def payload = readFile '${conjurPOLICY_FILE}'
 
-  agent any
+
   stages {
     stage("Run unit tests"){
       steps {
