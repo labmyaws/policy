@@ -16,7 +16,7 @@ pipeline {
       steps {
 
           sh  '''
-			curl -k --data $conjurAPI "$conjurURL/authn/Kramerica/$conjurUSER/authenticate"| base64 | tr -d '\r\n'
+		curl -vvv -k -H "Authorization:Token token=\"$(	curl -k --data $conjurAPI "$conjurURL/authn/Kramerica/$conjurUSER/authenticate"| base64 | tr -d '\r\n')\"" https://master1.yoba.net/resources/Kramerica/
               '''
   
       }
