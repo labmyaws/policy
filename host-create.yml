@@ -1,0 +1,17 @@
+---
+
+# Create Hosts - Linux Servers
+- &hosts
+  - !host
+    id: linsrv01
+    annotations:
+      OS: Linux Server
+      Hostname: linsrv01.dev.cyber-ark-demo.local
+
+  - !host
+    id: linsrv02
+    annotations:
+      OS: Linux Server
+      Hostname: linsrv02.dev.cyber-ark-demo.local
+
+...
