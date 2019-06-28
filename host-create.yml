@@ -8,7 +8,7 @@
       OS: Linux Server
       Hostname: linsrv01.dev.cyber-ark-demo.local
 
-  - !host
+   !host
     id: linsrv02
     annotations:
       OS: Linux Server
