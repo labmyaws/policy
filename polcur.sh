@@ -1,6 +1,6 @@
 #!/bin/sh
 
-login_token="2n80njs13vm7w22p3cptpfftpkakcg31v3h3821g3pytf9h28527ca"
+login_token="n80njs13vm7w22p3cptpfftpkakcg31v3h3821g3pytf9h28527ca"
 username="admin"
 
 auth_token=$(curl -k  --data $login_token https://master1.yoba.net/authn/Kramerica/admin/authenticate | base64 | tr -d '\r\n'| tr -d '[:space:]' )
