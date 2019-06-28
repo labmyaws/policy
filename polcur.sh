@@ -22,4 +22,5 @@ if [[ $policy_upload_http_response_code -ge 200 && $policy_upload_http_response_
         exit 0
     else
         echo "Your policy was NOT uploaded successfully. Check pol.out file for more information. "
+        exit 11
 fi
